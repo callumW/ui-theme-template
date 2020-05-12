@@ -10,12 +10,16 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+// lambda comple color pallete
+@lambda-complex-orange: hsl(21, 97%, 55%);
+@lambda-complex-green: hsl(43,19%,32%);
+@lambda-complex-black: hsl(0, 0%, 9%);
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
+@text-color:           @lambda-complex-orange;
 @text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color-highlight: @lambda-complex-green;
+@text-color-selected:  @lambda-complex-green;
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
@@ -33,7 +37,7 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
+@base-background-color: @lambda-complex-black;
 @base-border-color:     darken(@base-background-color, 8%);
 
 // Component colors
