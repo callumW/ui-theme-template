@@ -14,12 +14,13 @@
 @lambda-complex-orange: hsl(21, 97%, 55%);
 @lambda-complex-green: hsl(43,19%,32%);
 @lambda-complex-black: hsl(0, 0%, 9%);
+@lambda-complex-white: hsl(0, 0%, 89%);
 
 // Text Colors
 @text-color:           @lambda-complex-orange;
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: @lambda-complex-green;
-@text-color-selected:  @lambda-complex-green;
+@text-color-subtle:    @lambda-complex-white;
+@text-color-highlight: @lambda-complex-black;
+@text-color-selected:  @lambda-complex-black;
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
@@ -32,12 +33,12 @@
 @background-color-warning: hsl(32,   60%, 50%);
 @background-color-error:   hsl(0,    70%, 50%);
 
-@background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
+@background-color-highlight: @lambda-complex-orange;
+@background-color-selected:  @lambda-complex-orange;
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: @lambda-complex-black;
+@base-background-color: @lambda-complex-green;
 @base-border-color:     darken(@base-background-color, 8%);
 
 // Component colors
@@ -67,7 +68,7 @@
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: @lambda-complex-orange;
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
@@ -81,7 +82,7 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 12px;
+@font-size: 14px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
@@ -91,7 +92,7 @@
 @component-icon-size: 16px;
 @component-line-height: 25px;
 
-@tab-height: 30px;
+@tab-height: 25px;
 
 // Misc
 @component-border-radius: 2px;
